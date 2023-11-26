@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>
+            BookSky
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>
+                Rich Dad Poor Dad
+            </h2>
+            <u><h4>Robert T</h4></u>
+            <p>Rich Dad Poor Dad by Robert Kiyosaki and Sharon Lechter is a book that came out in 1997 and focuses on the importance of financial literacy from an early age. Throughout the book, the author explains how a person can increase their wealth by investing in assets and by being smart with money</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay">
+    </div>
+
+    <div class="popup-box">
+        <h2>ADD Book</h2>
+        <form action="">
+            <input placeholder="Book-Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short-Description" id="book-description-input" ></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-book">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
